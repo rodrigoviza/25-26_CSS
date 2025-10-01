@@ -3,6 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Tables</title>
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+
+            /* Combines the borders - makes them one */
+            border-collapse: collapse;
+        }
+
+        #customers td, #customers th{
+            /* border: size style color; */
+            border: 1px solid blanchedalmond;
+            padding: 8px;
+        }
+
+        #customers th{
+            background-color: green;
+            color: white;
+        }
+
+        #customers tr:hover{
+            background-color: #ddd;
+        }
+
+        #customers tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+
 </head>
 <body>
 <div class="container">
