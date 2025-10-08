@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: auto;
+            background-color: dodgerblue;
+            padding: 10px;
+
+            /* Grid styles */
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            /* column and row gap split
+            column-gap: 10px;
+            row-gap: 10px;
+
+            Shorthand:gap: row-gap, col-gap*/
+            gap: 10px 10px;
+            /* Grid styles End */
+        }
+        .container > div{
+            background-color: #f1f1f1;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .header{
+            /* Column start and end
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            Shorthand: grid-column: start / span width;
+             */
+            grid-column: 1 / span 2;
+        }
+        .header{
+            background-color: blanchedalmond !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header fullwidth">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</div>
+</body>
+</html>
