@@ -1,0 +1,15 @@
+/* Add all your styles here */
+.grid-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+}
+.site-header {
+    background-color: lightblue;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.main-nav{
+
+}
